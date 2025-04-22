@@ -17,6 +17,16 @@ Depends: Rsamtools, GenomicFeatures (>= 1.0.0), rtracklayer, BH, RcppArmadillo, 
 
 ### Installation
 
+```bash
+mamba install conda-forge::r-devtools -y
+mamba install bioconda::bioconductor-rsamtools -y
+mamba install bioconda::bioconductor-genomicfeatures -y
+mamba install bioconda::bioconductor-rtracklayer -y
+mamba install conda-forge::r-bh -y
+mamba install conda-forge::r-rcpparmadillo -y
+mamba install conda-forge::r-rcpp -y
+```
+
 R package `devtools` is required for metpeak to be installed from GitHub.
 ```
 install.packages("devtools")
