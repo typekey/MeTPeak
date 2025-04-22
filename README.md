@@ -26,17 +26,9 @@ mamba install conda-forge::r-bh -y
 mamba install conda-forge::r-rcpparmadillo -y
 mamba install conda-forge::r-rcpp -y
 ```
-
-R package `devtools` is required for metpeak to be installed from GitHub.
-```
-install.packages("devtools")
-```
-Some of MeTPeak dependent packages have to be installed from BiocLite,
-At last, `MeTPeak` can be installed as:
   
 ```
 library("devtools")
-source("https://bioconductor.org/biocLite.R")
 install_github("compgenomics/MeTPeak",build_opts = c("--no-resave-data", "--no-manual"))
 ```
 
